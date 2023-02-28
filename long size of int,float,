@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int a;
+	long b;
+	long long c;
+	double d;
+	long double e;
+	printf("size of the int=%d bytes\n",sizeof(a));
+	printf("size of the int long=%d bytes\n",sizeof(b));
+	printf("size of the long long int=%d bytes\n",sizeof(c));
+	printf("size of the double=%d bytes\n",sizeof(d));
+	printf("size of the long double=%d bytes",sizeof(e));
+	return 0;
+
+}
