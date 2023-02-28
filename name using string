@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+struct name
+{
+	char give[50];
+	char name[50];
+}n;
+int main()
+{
+	printf("enter the name:");
+	fgets(n.give,sizeof(n.give),stdin);
+	strcpy(n.name,n.give);
+	puts(n.name);
+	return 0;
+}
