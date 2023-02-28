@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct name
+{
+	float average;
+	int total;
+}n;
+int main()
+{
+	int day1_marks,day2_marks,day3_marks,day4_marks,day5_marks;
+	printf("enter the day1 marks:");
+	scanf("%d",&day1_marks);
+	printf("enter the day2 marks:");
+	scanf("%d",&day2_marks);
+	printf("enter the day3 marks:");
+	scanf("%d",&day3_marks);
+	printf("enter the day4 marks:");
+	scanf("%d",&day4_marks);
+	printf("enter the day5 marks:");
+	scanf("%d",&day5_marks);
+	n.total=day1_marks+day2_marks+day3_marks+day4_marks+day5_marks;
+	n.average= n.total/5;
+	printf("total:%d\n",n.total);
+	printf("average:%f",n.average);
+	return 0;
+}
