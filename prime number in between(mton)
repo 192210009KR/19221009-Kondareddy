@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int M,N,i,j;
+	printf("enter M value:"); 
+	scanf("%d",&M);
+	printf("enter N value:");
+    scanf("%d",&N);
+	for(i=M;i<=N;i++)
+	{
+		int factors =0;
+		for(j=2;j<i;j++)
+		{
+          if (i % j== 0)
+          {
+          	factors = factors +1;
+		  }
+		}
+		if (factors == 0)
+		{
+			printf("%d",i);
+		}
+	}
+	return 0;
+}
