@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,k,r,c,a[100][100],b[100][100],mult[100][100];
+	printf("enter the rows:");
+	scanf("%d",&r);
+	printf("enter the columns:");
+	scanf("%d",&c);
+	printf("enter the a matrix:");
+	for(i=0;i<r;i++)
+		for(j=0;j<c;j++)
+		{
+			printf("enter the element a%d%d:",i+1,j+1);
+			scanf("%d",&a[i][j]);
+		}
+	printf("enter the b matrix:");
+	for(i=0;i<r;i++)
+		for(j=0;j<c;j++)
+		{
+			printf("enter the element b%d%d:",i+1,j+1);
+			scanf("%d",&b[i][j]);
+		}
+	for(i=0;i<r;i++)
+		{
+			for(j=0;j<c;j++){
+				mult[i][j]=0;
+					for(k=0;k<c;k++){
+						mult[i][j] += a[i][k] * b[k][j];
+				}
+		    }
+		}
+		for(i=0;i<r;i++)
+		{
+			for(j=0;j<c;j++)
+			{
+				printf("%d  ",mult[i][j]);
+			}
+				printf("\n\n");
+		}
+		return 0;
+}
