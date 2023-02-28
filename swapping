@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	double a,b,c;
+	printf("enter the a:");
+	scanf("%lf",&a);
+	printf("enter the b:");
+	scanf("%lf",&b);
+	c=a;
+	a=b;
+	b=c;
+	printf("after swapping the first number=\n %lf",a);
+	printf("after swapping the second number=\n%lf",b);
+	return 0;
+}
