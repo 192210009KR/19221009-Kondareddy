@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int i=0,count=0;
+	char s[100];
+	printf("enter the string: ");
+	gets(s);
+	while (s[i]!='\0')
+	{
+		if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' ||s[i]=='u' || s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='u')
+			count++;
+		i++;
+	}
+	printf("no of vowels:%d ",count);
+	return 0;
+}
