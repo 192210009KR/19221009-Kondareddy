@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct integer
+{
+	int a;
+}y[5];
+int main()
+{
+	int i;
+	for(i=0;i<5;i++)
+	{
+	printf("enter the interger:");
+	scanf("%d",&y[i].a);
+	printf("integer:%d",y[i].a);
+    }
+	return 0;
+}
