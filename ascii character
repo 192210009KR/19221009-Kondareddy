@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	char c;
+	printf("enter a character:");
+	scanf("%c",&c);
+	printf("ascii vakue of %c=%d",c,c);
+	return 0;
+}
+0 comments on commit 5ae744
